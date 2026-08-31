@@ -59,14 +59,16 @@ def render_content():
             type="text", 
             name="name",
             placeholder="Name",
-            maxlength=NAME_MAX
+            maxlength=NAME_MAX,
+            required=True,
         ),
 
             Input(
             type="text", 
             name="message",
             placeholder="Message",
-            maxlength=MESSAGE_MAX
+            maxlength=MESSAGE_MAX,
+            required=True,
         ),
             
             Button("Add", type="submit"),
